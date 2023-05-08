@@ -3,14 +3,14 @@
  */
 import * as wavesProto from '@waves/protobuf-serialization'
 import {binary, serializePrimitives} from '@waves/marshall'
-import {base58Encode, blake2b, concat, signBytes} from '@waves/ts-lib-crypto'
+import {base58Encode, blake2b, concat, signBytes} from '@krosschain/ts-lib-crypto'
 import {IDataParams, WithId, WithProofs, WithSender} from '../transactions'
 import {addProof, convertToPairs, fee, getSenderPublicKey, networkByte} from '../generic'
 import {TSeedTypes} from '../types'
 import {validate} from '../validators'
 import {dataEntryToProto, txToProtoBytes} from '../proto-serialize'
 import {DEFAULT_VERSIONS} from '../defaultVersions'
-import {DataFiledType, DataTransaction, DataTransactionEntry, TRANSACTION_TYPE} from '@waves/ts-types'
+import {DataFiledType, DataTransaction, DataTransactionEntry, TRANSACTION_TYPE} from '@krosschain/ts-types'
 
 const {
     BASE58_STRING,

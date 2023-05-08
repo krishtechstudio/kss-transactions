@@ -8,7 +8,7 @@ import {
     blake2b,
     concat,
     keccak
-} from '@waves/ts-lib-crypto'
+} from '@krosschain/ts-lib-crypto'
 import {binary, schemas} from '@waves/marshall'
 import {
     AliasTransaction,
@@ -33,7 +33,7 @@ import {
     UpdateAssetInfoTransaction,
     GenesisTransaction,
     // InvokeExpressionTransaction
-} from '@waves/ts-types'
+} from '@krosschain/ts-types'
 import {base64Prefix, chainIdFromRecipient} from './generic'
 import Long from 'long'
 import {lease} from './transactions/lease'

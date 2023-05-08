@@ -2,14 +2,14 @@
  * @module index
  */
 import {IIssueParams, WithId, WithProofs, WithSender} from '../transactions'
-import {base58Encode, blake2b, signBytes} from '@waves/ts-lib-crypto'
+import {base58Encode, blake2b, signBytes} from '@krosschain/ts-lib-crypto'
 import {addProof, base64Prefix, convertToPairs, fee, getSenderPublicKey, networkByte} from '../generic'
 import {TSeedTypes} from '../types'
 import {binary} from '@waves/marshall'
 import {validate} from '../validators'
 import {txToProtoBytes} from '../proto-serialize'
 import {DEFAULT_VERSIONS} from '../defaultVersions'
-import {IssueTransaction, TRANSACTION_TYPE} from '@waves/ts-types'
+import {IssueTransaction, TRANSACTION_TYPE} from '@krosschain/ts-types'
 
 /* @echo DOCS */
 export function issue(params: IIssueParams, seed: TSeedTypes): IssueTransaction & WithId & WithProofs

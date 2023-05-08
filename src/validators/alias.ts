@@ -10,7 +10,7 @@ import {
     isValidAliasName,
     defaultValue, isPublicKey, isNaturalNumberOrZeroLike
 } from './validators'
-import {TRANSACTION_TYPE} from '@waves/ts-types'
+import {TRANSACTION_TYPE} from '@krosschain/ts-types'
 
 
 const aliasScheme = {

@@ -2,7 +2,7 @@
  * @module index
  */
 import {ISetScriptParams, WithId, WithProofs, WithSender} from '../transactions'
-import {signBytes, blake2b, base58Encode} from '@waves/ts-lib-crypto'
+import {signBytes, blake2b, base58Encode} from '@krosschain/ts-lib-crypto'
 import {
   addProof,
   getSenderPublicKey,
@@ -16,7 +16,7 @@ import {binary} from '@waves/marshall'
 import { validate } from '../validators'
 import {scriptToProto, txToProtoBytes} from '../proto-serialize'
 import { DEFAULT_VERSIONS } from '../defaultVersions'
-import {SetScriptTransaction, TRANSACTION_TYPE} from '@waves/ts-types'
+import {SetScriptTransaction, TRANSACTION_TYPE} from '@krosschain/ts-types'
 
 /* @echo DOCS */
 export function setScript(params: ISetScriptParams, seed: TSeedTypes): SetScriptTransaction & WithId & WithProofs

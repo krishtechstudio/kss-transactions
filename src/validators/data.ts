@@ -1,4 +1,4 @@
-import {TRANSACTION_TYPE} from '@waves/ts-types'
+import {TRANSACTION_TYPE} from '@krosschain/ts-types'
 import {
   isEq,
   orEq,

@@ -2,14 +2,14 @@
  * @module index
  */
 import {ISponsorshipParams, WithId, WithProofs, WithSender} from '../transactions'
-import { signBytes, blake2b, base58Encode } from '@waves/ts-lib-crypto'
+import { signBytes, blake2b, base58Encode } from '@krosschain/ts-lib-crypto'
 import {addProof, getSenderPublicKey, convertToPairs, fee, networkByte} from '../generic'
 import { TSeedTypes } from '../types'
 import { binary } from '@waves/marshall'
 import { validate } from '../validators'
 import { txToProtoBytes } from '../proto-serialize'
 import { DEFAULT_VERSIONS } from '../defaultVersions'
-import {SponsorshipTransaction, TRANSACTION_TYPE} from '@waves/ts-types'
+import {SponsorshipTransaction, TRANSACTION_TYPE} from '@krosschain/ts-types'
 
 
 /* @echo DOCS */

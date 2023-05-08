@@ -8,8 +8,8 @@ import {
     TRANSACTION_TYPE,
     TransactionType
 } from '@waves/ts-types/src'
-import {InvokeScriptCallArgument} from '@waves/ts-types/src/parts'
-import {EthereumTransaction} from '@waves/ts-types'
+import {InvokeScriptCallArgument} from '@krosschain/ts-types/src/parts'
+import {EthereumTransaction} from '@krosschain/ts-types'
 
 export interface WithId {
     /**

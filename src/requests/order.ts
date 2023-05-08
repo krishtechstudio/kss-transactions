@@ -1,13 +1,13 @@
 /**
  * @module index
  */
-import {signBytes, blake2b, base58Encode} from '@waves/ts-lib-crypto'
+import {signBytes, blake2b, base58Encode} from '@krosschain/ts-lib-crypto'
 import {addProof, getSenderPublicKey, convertToPairs, isOrder, networkByte} from '../generic'
 import {IOrderParams, WithId, WithProofs, WithSender} from '../transactions'
 import {TSeedTypes} from '../types'
 import {binary} from '@waves/marshall'
 import {validate} from '../validators'
-import {ExchangeTransactionOrder, SignedIExchangeTransactionOrder} from '@waves/ts-types'
+import {ExchangeTransactionOrder, SignedIExchangeTransactionOrder} from '@krosschain/ts-types'
 import {orderToProtoBytes} from '../proto-serialize'
 
 
@@ -93,7 +93,7 @@ export function order(paramsOrOrder: any, seed?: TSeedTypes): SignedIExchangeTra
     }
 
     if (ord.version >= 3) {
-        ord.matcherFeeAssetId = paramsOrOrder.matcherFeeAssetId === 'WAVES' ? null : paramsOrOrder.matcherFeeAssetId
+        ord.matcherFeeAssetId = paramsOrOrder.matcherFeeAssetId === 'KSS' ? null : paramsOrOrder.matcherFeeAssetId
     }
 
     if (ord.version === 4) {

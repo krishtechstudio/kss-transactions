@@ -1,4 +1,4 @@
-import {base58Decode, base64Decode, keccak, blake2b, stringToBytes} from '@waves/ts-lib-crypto'
+import {base58Decode, base64Decode, keccak, blake2b, stringToBytes} from '@krosschain/ts-lib-crypto'
 
 
 const TX_DEFAULTS = {
@@ -201,7 +201,7 @@ export const isPublicKeyForEthSuppTx = ifElse(
 )
 
 export const isWavesOrAssetId = ifElse(
-    orEq(['', null, undefined, 'WAVES']),
+    orEq(['', null, undefined, 'KSS']),
     defaultValue(true),
     isHash
 )

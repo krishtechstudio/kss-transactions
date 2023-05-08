@@ -1,13 +1,13 @@
 /**
  * @module index
  */
-import { signBytes, blake2b, base58Encode, publicKey, concat, TSeed } from '@waves/ts-lib-crypto'
+import { signBytes, blake2b, base58Encode, publicKey, concat, TSeed } from '@krosschain/ts-lib-crypto'
 import { schemas, serializePrimitives } from '@waves/marshall'
 import { binary } from '@waves/marshall'
 import { validate } from '../validators'
 import { TPrivateKey } from '../types'
-import {DataFiledType, DataTransactionEntry} from '@waves/ts-types'
-import {DataTransactionDeleteRequest} from '@waves/ts-types/src/parts'
+import {DataFiledType, DataTransactionEntry} from '@krosschain/ts-types'
+import {DataTransactionDeleteRequest} from '@krosschain/ts-types/src/parts'
 
 export interface ICustomDataV1 {
   version: 1

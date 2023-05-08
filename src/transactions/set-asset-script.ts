@@ -6,7 +6,7 @@ import {
   WithId, WithProofs,
   WithSender
 } from '../transactions'
-import { signBytes, blake2b, base58Encode, } from '@waves/ts-lib-crypto'
+import { signBytes, blake2b, base58Encode, } from '@krosschain/ts-lib-crypto'
 import {
   addProof,
   getSenderPublicKey,
@@ -20,7 +20,7 @@ import { binary } from '@waves/marshall'
 import { validate } from '../validators'
 import { txToProtoBytes } from '../proto-serialize'
 import { DEFAULT_VERSIONS } from '../defaultVersions'
-import {SetAssetScriptTransaction, TRANSACTION_TYPE} from '@waves/ts-types'
+import {SetAssetScriptTransaction, TRANSACTION_TYPE} from '@krosschain/ts-types'
 
 
 /* @echo DOCS */
